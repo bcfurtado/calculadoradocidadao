@@ -1,14 +1,15 @@
-import unittest
+from unittest import main, TestCase
 
-import app
 from flask import json
 
+from calculadoradocidadao.site import app
 
-class AppTestCase(unittest.TestCase):
+
+class AppTestCase(TestCase):
 
     def setUp(self):
-        app.app.testing = True
-        self.app = app.app.test_client()
+        app.testing = True
+        self.app = app.test_client()
 
     def test_hello_world(self):
         response = self.app.get('/')
@@ -32,4 +33,4 @@ class AppTestCase(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    unittest.main()
+    main()
