@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+    <title>BCB - Calculadora do cidadão</title>
+    <link rel="stylesheet" href="/css/Sistema.css">
+    <link rel="stylesheet" href="../css/impressao.css">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+</head>
+
+<body class="menu">
+<script type="text/javascript" language="javascript" src="../js/tratacampo.js"></script>
+<script type="text/javascript" language="javascript" src="../js/util.js"></script>
+<script type="text/javascript" language="javascript" src="../js/calendario.js"></script>
+
+
+
+
+<table style="margin:auto;width:100%;" cellspacing="0" cellpadding="0" border="0">
+    <tbody><tr>
+        <td class="cab" width="10%">
+          <a href="../jsp/index.jsp">
+            <img class="tela" style="margin-left:3px;margin-top:3px" src="../imagens/logoSistemas.gif" title="logoSistemas.gif" alt="Banco Central do Brasil">
+            <img class="impressao" style="margin-left:3px;margin-top:3px" src="../imagens/logoBacen_preto.gif" title="logoSistemas.gif" alt="Banco Central do Brasil">
+          </a>
+        </td>
+        <td style="white-space: nowrap" class="cab" width="40%">
+          <div><b>Calculadora do cidadão</b></div>
+        </td>
+        <td align="right" class="cab" width="50%">
+             <div style="margin-right:13px">
+                 Acesso público
+             </div>
+
+             <div class="textoPequeno" style="margin-right:13px">
+                 06/12/2017 - 00:03
+             </div>
+         </td>
+    </tr>
+</tbody></table>
+
+
+
+
+
+<script type="text/javascript" src="/js/coolmenus3.js"></script>
+<script type="text/javascript" src="/js/coolmenu2-config.js"></script>
+
+
+<script type="text/javascript">
+<!--
+
+    oCMenu.makeMenu('calculadoraCidadao','','Calculadora do cidadão','','','20%','','','','','','','',0,'','','','','','','');
+        oCMenu.makeMenu('aplicacaoDepositosRegulares','calculadoraCidadao','Aplicação com depósitos regulares','/CALCIDADAO/publico/exibirFormAplicacaoDepositosRegulares.do?method=exibirFormAplicacaoDepositosRegulares','','20%','','','','','','','',0,'','','','','','','');
+        oCMenu.makeMenu('financiamentoPrestacoesFixas','calculadoraCidadao','Financiamento com prestações fixas','/CALCIDADAO/publico/exibirFormFinanciamentoPrestacoesFixas.do?method=exibirFormFinanciamentoPrestacoesFixas','','20%','','','','','','','',0,'','','','','','','');
+        oCMenu.makeMenu('valorFuturoCapital','calculadoraCidadao','Valor futuro de um capital','/CALCIDADAO/publico/exibirFormCalculoValorFuturoCapital.do?method=exibirFormCalculoValorFuturoCapital','','20%','','','','','','','',0,'','','','','','','');
+        oCMenu.makeMenu('correcaoValores','calculadoraCidadao','Correção de valores','/CALCIDADAO/publico/exibirFormCorrecaoValores.do?method=exibirFormCorrecaoValores','','20%','','','','','','','',0,'','','','','','','');
+        oCMenu.makeMenu('cartaoCredito','calculadoraCidadao','Cartão de Crédito: financiamento da fatura','/CALCIDADAO/publico/exibirFormCartaoCredito.do','','20%','','','','','','','',0,'','','','','','','');
+
+
+    oCMenu.makeMenu('manterAjuda','','Ajuda','/CALCIDADAO/','','','','','','','','','',0,'','','','','','','');
+        oCMenu.makeMenu('ajudaGeral','manterAjuda','Geral','','','20%','','','','','','','',0,'top.newWin=window.open("/CALCIDADAO/jsp/ajudaGeralCalCidadao.jsp", "Ajuda", "dependent=yes,width=410,height=430,screenX=200,screenY=300,titlebar=yes,scrollbars=yes,resizable=yes")','','','','','','');
+        oCMenu.makeMenu('ajudaCalCidadao','manterAjuda','Sobre a calculadora do cidadão','','','20%','','','','','','','',0,'top.newWin=window.open("/CALCIDADAO/jsp/ajudaCalCidadao.jsp", "Ajuda", "dependent=yes,width=410,height=430,screenX=200,screenY=300,titlebar=yes,scrollbars=yes,resizable=yes")','','','','','','');
+
+    oCMenu.construct();
+//-->
+</script><div class="clBar" id="oCMenubbar" style="z-index: 1; clip: rect(0px 641px 17px 0px); width: 641px; height: 17px; left: 0px; top: 0px; visibility: visible;"><div class="0" id="oCMenubbar_0" style="clip: rect(0px 641px 11px 0px); width: 641px; height: 11px; left: 0px; top: 3px; visibility: visible;"></div></div><div class="cmMenuBorder" id="oCMenu_calculadoraCidadao_0" style="z-index: 2; clip: rect(0px 130px 14px 0px); width: 130px; height: 14px; left: -1px; top: 41px; visibility: visible;"><div class="cmMenu" id="oCMenu_calculadoraCidadao" style="z-index: 4; clip: rect(0px 128px 18px 0px); width: 128px; height: 18px; left: 1px; top: -2px;">Calculadora do cidadão</div></div><div class="cmMenuBorder" id="oCMenu_manterAjuda_0" style="z-index: 3; clip: rect(0px 102px 14px 0px); width: 102px; height: 14px; left: 128px; top: 41px; visibility: visible;"><div class="cmMenu" id="oCMenu_manterAjuda" style="z-index: 5; clip: rect(0px 100px 18px 0px); width: 100px; height: 18px; left: 1px; top: -2px; visibility: inherit;">Ajuda</div></div><div class="cmItemBorder" id="oCMenu_1_0" style="z-index: 4; overflow: hidden; visibility: hidden; clip: rect(0px 130px 34px 0px); width: 130px; height: 34px; left: 176px; top: 60px;"><div class="cmItem" id="oCMenu_aplicacaoDepositosRegulares" style="z-index: 6; left: 0px; top: 0px; clip: rect(0px 128px 16px 0px); width: 128px; height: 16px; visibility: inherit;">Geral</div><div class="cmItem" id="oCMenu_financiamentoPrestacoesFixas" style="z-index: 7; left: 0px; top: 0px; clip: rect(0px 128px 16px 0px); width: 128px; height: 16px; visibility: inherit;">Sobre a calculadora do cidadão</div><div class="cmItem" id="oCMenu_valorFuturoCapital" style="z-index: 8; left: 0px; top: 0px; visibility: hidden;"></div><div class="cmItem" id="oCMenu_correcaoValores" style="z-index: 9; left: 0px; top: 0px; visibility: hidden;"></div><div class="cmItem" id="oCMenu_cartaoCredito" style="z-index: 10; left: 0px; top: 0px; visibility: hidden;"></div></div>
+
+
+
+
+
+
+
+
+<div style="text-align: center">
+<table width="100%" border="0" style="margin: auto; text-align: left" cellpadding="0" cellspacing="0">
+    <tbody><tr>
+        <td class="breadCrumb"><span style="font-size: 80%;"><span class="trilhaNav"><a href="/CALCIDADAO">Início</a>&nbsp;<img src="/img/seta.gif" alt="Subitem de navegação" title="Subitem de navegação">&nbsp;Calculadora do cidadão&nbsp;<img src="/img/seta.gif" alt="Subitem de navegação" title="Subitem de navegação">&nbsp; Correção de valores</span>
+</span></td>
+        <td style="text-align: right; vertical-align: top" class="codTela">[CALFW0305]</td>
+    </tr>
+</tbody></table>
+</div>
+
+<div style="text-align: center">
+<table style="margin: auto; text-align: left" border="0" cellpadding="0" cellspacing="0" width="98%">
+    <tbody>
+        <tr>
+            <td>
+            <form action="" method="post">&nbsp;
+            <div class="titulo3" style="text-align: center">Resultado da
+            Correção pela Selic <br>
+            <br>
+            </div>
+
+            <div class="centralizado">
+                <div class="obs" style="width: 60%;">&nbsp;</div>
+                  &nbsp;
+
+
+            <table title="Correção de valores: Selic" cellpadding="5" cellspacing="0" style="width: 60%;">
+
+                <caption class="fundoPadraoAEscuro2 semBorda"><strong>Dados
+                básicos da correção pela Selic</strong></caption>
+                <thead>
+                    <tr class="fundoPadraoAEscuro3">
+                        <th colspan="2" class="aesquerda thform">Dados informados</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- tr style="text-align:left">
+                    <td colspan="2" style="text-align:left;vertical-align:top"
+                        class="fundoPadraoAEscuro2  txN">Dados b&aacute;sicos da
+                    corre&ccedil;&atilde;o pela Selic</td>
+                </tr-->
+
+                    <tr>
+                    </tr>
+
+                    <tr style="text-align: left; valign: middle">
+                        <td class="fundoPadraoAClaro3 ">Data inicial</td>
+                        <td style="text-align: right" class="fundoPadraoAClaro3 ">
+
+
+                                30/09/2015
+
+                        </td>
+                    </tr>
+                    <tr style="text-align: left; vertical-align: middle">
+                        <td class="fundoPadraoAClaro3 ">Data final</td>
+                        <td style="text-align: right" class="fundoPadraoAClaro3 ">
+
+
+                                05/12/2017
+
+                        </td>
+                    </tr>
+
+
+                        <tr style="text-align: left; vertical-align: middle">
+                            <td class="fundoPadraoAClaro3 ">Valor nominal</td>
+                            <td style="text-align: right" class="fundoPadraoAClaro3 ">R$ 2.607,90 (REAL)</td>
+                        </tr>
+
+
+                    <tr style="text-align: left; vertical-align: middle" class="fundoPadraoAEscuro3  txN">
+                        <td colspan="2">Dados calculados</td>
+                    </tr>
+
+                    <tr style="text-align: left; vertical-align: middle">
+                        <td class="fundoPadraoAClaro3 ">Índice de
+                        correção no período</td>
+                        <td style="text-align: right" class="fundoPadraoAClaro3 ">1,290148923829105</td>
+                    </tr>
+                    <tr style="text-align: left; vertical-align: middle">
+                        <td class="fundoPadraoAClaro3 ">Valor percentual
+                        correspondente</td>
+                        <td style="text-align: right" class="fundoPadraoAClaro3 ">29,014892382910478 %</td>
+                    </tr>
+
+                        <tr style="text-align: left; vertical-align: middle">
+                            <td class="fundoPadraoAClaro3 ">Valor corrigido na data
+                            final</td>
+                            <td style="text-align: right" class="fundoPadraoAClaro3 ">R$ 3.364,58 (REAL)</td>
+                        </tr>
+
+                </tbody>
+            </table>
+
+            <table cellpadding="5" cellspacing="0" style="margin: auto">
+                <tbody><tr>
+                    <td class="txN"><input type="button" class="botao" onclick="location.href = 'exibirFormCorrecaoValores.do?method=exibirFormCorrecaoValores&amp;aba=4';" value="Fazer nova pesquisa" title="Fazer nova pesquisa"></td>
+                    <td class="txN"><input type="button" class="botao" onclick="window.print()" value="Imprimir" title="Imprimir">
+                    </td>
+                </tr>
+            </tbody></table>
+            </div>
+            </form>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>
+
+
+
+<script id="f5_cspm">(function(){var f5_cspm={f5_p:'BOKIKNJCJILONEAGAAFGCKMPLICHDAPKMOEFBDBHGJJCJDKJEOCALJBILNPHOPMPFEJBBMONGBLDALKGCCIANCCJABBLEAFIDJALEKNJGGLAKFLOGCIJLBELHCCGBPBO',setCharAt:function(str,index,chr){if(index>str.length-1)return str;return str.substr(0,index)+chr+str.substr(index+1);},get_byte:function(str,i){var s=(i/16)|0;i=(i&15);s=s*32;return((str.charCodeAt(i+16+s)-65)<<4)|(str.charCodeAt(i+s)-65);},set_byte:function(str,i,b){var s=(i/16)|0;i=(i&15);s=s*32;str=f5_cspm.setCharAt(str,(i+16+s),String.fromCharCode((b>>4)+65));str=f5_cspm.setCharAt(str,(i+s),String.fromCharCode((b&15)+65));return str;},set_latency:function(str,latency){latency=latency&0xffff;str=f5_cspm.set_byte(str,40,(latency>>8));str=f5_cspm.set_byte(str,41,(latency&0xff));str=f5_cspm.set_byte(str,35,2);return str;},wait_perf_data:function(){try{var wp=window.performance.timing;if(wp.loadEventEnd>0){var res=wp.loadEventEnd-wp.navigationStart;if(res<60001){var cookie_val=f5_cspm.set_latency(f5_cspm.f5_p,res);window.document.cookie='f5avr1991254942aaaaaaaaaaaaaaaa='+encodeURIComponent(cookie_val)+';path=/';}
+return;}}
+catch(err){return;}
+setTimeout(f5_cspm.wait_perf_data,100);return;},go:function(){var chunk=window.document.cookie.split(/\s*;\s*/);for(var i=0;i<chunk.length;++i){var pair=chunk[i].split(/\s*=\s*/);if(pair[0]=='f5_cspm'&&pair[1]=='1234')
+{var d=new Date();d.setTime(d.getTime()-1000);window.document.cookie='f5_cspm=;expires='+d.toUTCString()+';path=/;';setTimeout(f5_cspm.wait_perf_data,100);}}}}
+f5_cspm.go();}());</script></body></html>

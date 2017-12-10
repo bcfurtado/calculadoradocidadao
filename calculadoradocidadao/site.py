@@ -18,11 +18,13 @@ class CorrigirPelaSelic(Resource):
 
     def post(self):
         form = request.form
-        valorCorrigido = self.get_valor_corrigido(
+        response = self.get_valor_corrigido(
             form['dataInicial'],
             form['dataFinal'],
             form['valorCorrecao']
         )
+        valorCorrigido = self.parse_response(response.text)
+
         return {
             'dataInicial': form['dataInicial'],
             'dataFinal': form['dataFinal'],
@@ -38,9 +40,10 @@ class CorrigirPelaSelic(Resource):
             'valorCorrecao': valor_correcao,
         }
 
-        r = requests.post(url, data=values)
+        return requests.post(url, data=values)
 
-        root = lxml.html.fromstring(r.text)
+    def parse_response(self, response):
+        root = lxml.html.fromstring(response)
         result = root.xpath('//form/div[2]/table/tbody/tr[8]/td[2]/text()')
         return result[0]
 
