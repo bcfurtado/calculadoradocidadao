@@ -1,0 +1,1 @@
+web: gunicorn calculadoradocidadao.site:app --log-file=-
