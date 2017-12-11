@@ -29,7 +29,13 @@ git push heroku master
 
 ### production - how use
 ```sh
-curl https://calculadoradocidadao.herokuapp.com/corrigirpelaselic -d "dataInicial=30/09/2015" -d "dataFinal=05/12/2017" -d "valorCorrecao=2607,90" -X POST -v
+➜  Projects  curl https://calculadoradocidadao.herokuapp.com/corrigirpelaselic -d "dataInicial=30/09/2015" -d "dataFinal=05/12/2017" -d "valorCorrecao=2607,90" -X POST  | python -m json.tool
+{
+    "dataFinal": "05/12/2017",
+    "dataInicial": "30/09/2015",
+    "valorCorrecao": "2607,90",
+    "valorCorrigido": "R$ 3.364,58 (REAL)"
+}
 ```
 
 
