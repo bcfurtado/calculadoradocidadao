@@ -1,4 +1,7 @@
-# calculadora do cidadao
+# Calculadora do Cidadão
+
+## what's it?
+It's restful wrapper for `Calculadora do Cidadão` [website](https://www3.bcb.gov.br/CALCIDADAO/jsp/index.jsp).
 
 ## requirements
 - python >= 3.6
@@ -13,3 +16,33 @@ pip install -r requirements.txt
 ```sh
 curl http://localhost:5000/corrigirpelaselic -d "dataInicial=30/09/2015" -d "dataFinal=05/12/2017" -d "valorCorrecao=2607,90" -X POST -v
 ```
+
+## how deploy
+```sh
+heroku login
+heroku create
+git push heroku master
+```
+
+## production
+- https://calculadoradocidadao.herokuapp.com/
+
+### production - how use
+```sh
+curl https://calculadoradocidadao.herokuapp.com/corrigirpelaselic -d "dataInicial=30/09/2015" -d "dataFinal=05/12/2017" -d "valorCorrecao=2607,90" -X POST -v
+```
+
+
+## roadmap
+
+| Endpoint                                   | Status  |
+|--------------------------------------------|---------|
+| Aplicação com depósitos regulares          | Pending |
+| Financiamento com prestações fixas         | Pending |
+| Valor futuro de um capital                 | Pending |
+| Correção de valores > Índices de preços    | Pending |
+| Correção de valores > TR                   | Pending |
+| Correção de valores > Poupança             | Pending |
+| Correção de valores > Selic                | Done    |
+| Correção de valores > CDI                  | Pending |
+| Cartão de Crédito: financiamento da fatura | Pending |
