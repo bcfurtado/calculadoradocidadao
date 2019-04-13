@@ -1,5 +1,7 @@
 # Calculadora do Cidadão
 
+[![Build Status](https://travis-ci.org/bcfurtado/calculadoradocidadao.svg?branch=master)](https://travis-ci.org/bcfurtado/calculadoradocidadao)
+
 ## what's it?
 It's restful wrapper for `Calculadora do Cidadão` [website](https://www3.bcb.gov.br/CALCIDADAO/jsp/index.jsp).
 
@@ -15,13 +17,6 @@ pip install -r requirements.txt
 ## how use
 ```sh
 curl http://localhost:5000/corrigirpelaselic -d "dataInicial=30/09/2015" -d "dataFinal=05/12/2017" -d "valorCorrecao=2607,90" -X POST -v
-```
-
-## how deploy
-```sh
-heroku login
-heroku create
-git push heroku master
 ```
 
 ## production
