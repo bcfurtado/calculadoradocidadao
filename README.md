@@ -7,11 +7,12 @@ It's restful wrapper for `Calculadora do Cidadão` [website](https://www3.bcb.go
 
 ## requirements
 - python >= 3.6
+- poetry
 
 ## install
 ```sh
-mkvirtualenv calculadoradocidadao -p $(which python3)
-pip install -r requirements.txt
+poetry install
+make tests
 ```
 
 ## how use

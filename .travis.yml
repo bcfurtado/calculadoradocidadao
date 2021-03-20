@@ -1,7 +1,9 @@
 language: python
 python:
   - 3.6
+before_install:
+  pip install poetry
 install:
-  pip install -r requirements.txt
+  poetry install
 script:
   make tests
