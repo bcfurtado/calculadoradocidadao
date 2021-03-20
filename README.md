@@ -6,7 +6,7 @@
 It's restful wrapper for `Calculadora do Cidadão` [website](https://www3.bcb.gov.br/CALCIDADAO/jsp/index.jsp).
 
 ## requirements
-- python >= 3.6
+- python >= 3.8
 - poetry
 
 ## install

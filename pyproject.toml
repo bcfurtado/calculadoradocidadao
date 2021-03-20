@@ -5,14 +5,14 @@ description = ""
 authors = ["Bruno Furtado <bruno@bcfurtado.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.6"
+python = "^3.8"
 Flask = "1.0"
 Flask-RESTful = "0.3.6"
 gunicorn = "19.7.1"
 Jinja2 = "2.11.3"
 lxml = "4.6.2"
 requests = "2.20.0"
-Werkzeug = "0.15.3"
+Werkzeug = "1.0.1"
 
 [tool.poetry.dev-dependencies]
 
