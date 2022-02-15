@@ -12,6 +12,7 @@ It's restful wrapper for `Calculadora do Cidadão` [website](https://www3.bcb.go
 ## install
 ```sh
 poetry install
+pre-commit
 make tests
 ```
 
