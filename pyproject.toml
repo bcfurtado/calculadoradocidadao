@@ -5,14 +5,14 @@ description = ""
 authors = ["Bruno Furtado <bruno@bcfurtado.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.8"
-Flask = "1.0"
-Flask-RESTful = "0.3.6"
+python = "^3.10"
+Flask = "2.0.3"
+Flask-RESTful = "0.3.9"
 gunicorn = "19.7.1"
-Jinja2 = "2.11.3"
-lxml = "4.6.2"
+Jinja2 = "3.0.3"
+lxml = "4.7.1"
 requests = "2.20.0"
-Werkzeug = "1.0.1"
+Werkzeug = "2.0.3"
 
 [tool.poetry.dev-dependencies]
 
