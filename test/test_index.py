@@ -22,9 +22,13 @@ class AppTestCase(TestCase):
         self.app = app.test_client()
 
     def test_hello_world(self):
+        # Act
         response = self.app.get('/')
+
+        # Assert
         self.assertEqual(response.status_code, 200)
-        self.assertEqual(response.data.decode('utf-8'), 'Hello World!')
+        data = json.loads(response.data)
+        self.assertEqual(data['msg'], 'Hello World!')
 
     @vcr.use_cassette()
     def test_post_valor_corrigido_pela_selic(self):

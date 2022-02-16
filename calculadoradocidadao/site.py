@@ -9,9 +9,12 @@ app = Flask(__name__)
 api = Api(app)
 
 
-@app.route('/')
-def hello():
-    return 'Hello World!'
+class HomeView(Resource):
+    def get(self):
+        return {'msg': 'Hello World!'}
+
+
+api.add_resource(HomeView, '/')
 
 
 class CorrigirPelaSelic(Resource):
