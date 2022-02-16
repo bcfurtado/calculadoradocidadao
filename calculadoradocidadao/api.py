@@ -1,7 +1,5 @@
 import lxml.html
-
 import requests
-
 
 BASE_URL = 'https://www3.bcb.gov.br/CALCIDADAO/publico'
 CORRIGIR_PELA_SELIC_URL = f'{BASE_URL}/corrigirPelaSelic.do?method=corrigirPelaSelic'

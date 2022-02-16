@@ -1,9 +1,10 @@
 from pathlib import Path
-from unittest import main, TestCase
+from unittest import TestCase, main
 
-from calculadoradocidadao.site import app
 from flask import json
 from vcr import VCR
+
+from calculadoradocidadao.site import app
 
 fixtures = Path(__file__).parent.joinpath('fixtures').as_posix()
 vcr = VCR(
@@ -16,7 +17,6 @@ vcr = VCR(
 
 
 class AppTestCase(TestCase):
-
     def setUp(self):
         app.testing = True
         self.app = app.test_client()
@@ -33,11 +33,14 @@ class AppTestCase(TestCase):
     @vcr.use_cassette()
     def test_post_valor_corrigido_pela_selic(self):
         # Act
-        response = self.app.post('/corrigirpelaselic', data={
-            'dataInicial': '30/09/2015',
-            'dataFinal': '05/12/2017',
-            'valorCorrecao': '2607,90',
-        })
+        response = self.app.post(
+            '/corrigirpelaselic',
+            data={
+                'dataInicial': '30/09/2015',
+                'dataFinal': '05/12/2017',
+                'valorCorrecao': '2607,90',
+            },
+        )
 
         # Arrange
         self.assertEqual(response.status_code, 200)
