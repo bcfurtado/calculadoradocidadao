@@ -17,6 +17,7 @@ Werkzeug = "2.0.3"
 [tool.poetry.dev-dependencies]
 black = "^22.1.0"
 pre-commit = "^2.17.0"
+vcrpy = "^4.1.1"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
