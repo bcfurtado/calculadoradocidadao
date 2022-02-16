@@ -32,16 +32,16 @@ class AppTestCase(TestCase):
 
     @vcr.use_cassette()
     def test_post_valor_corrigido_pela_selic(self):
-        response = self.app.post('/corrigirpelaselic', data=dict(
-            dataInicial='30/09/2015',
-            dataFinal='05/12/2017',
+        # Act
+        response = self.app.post('/corrigirpelaselic', data={
+            'dataInicial': '30/09/2015',
+            'dataFinal': '05/12/2017',
+            'valorCorrecao': '2607,90',
+        })
 
-            valorCorrecao='2607,90',
-        ))
-
-        data = json.loads(response.data)
-
+        # Arrange
         self.assertEqual(response.status_code, 200)
+        data = json.loads(response.data)
         self.assertEqual(data['dataInicial'], '30/09/2015')
         self.assertEqual(data['dataFinal'], '05/12/2017')
         self.assertEqual(data['valorCorrecao'], '2607,90')
