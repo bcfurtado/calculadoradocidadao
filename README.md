@@ -1,6 +1,7 @@
 # Calculadora do Cidadão
 
 [![Build Status](https://travis-ci.org/bcfurtado/calculadoradocidadao.svg?branch=master)](https://travis-ci.org/bcfurtado/calculadoradocidadao)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fbcfurtado%2Fcalculadoradocidadao.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fbcfurtado%2Fcalculadoradocidadao?ref=badge_shield)
 
 ## what's it?
 It's restful wrapper for `Calculadora do Cidadão` [website](https://www3.bcb.gov.br/CALCIDADAO/jsp/index.jsp).
@@ -49,3 +50,7 @@ curl http://localhost:5000/corrigirpelaselic -d "dataInicial=30/09/2015" -d "dat
 | Correção de valores > Selic                | Done    |
 | Correção de valores > CDI                  | Pending |
 | Cartão de Crédito: financiamento da fatura | Pending |
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fbcfurtado%2Fcalculadoradocidadao.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fbcfurtado%2Fcalculadoradocidadao?ref=badge_large)
