@@ -1,5 +1,9 @@
+.PHONY: tests
+
 start:
 	export FLASK_APP=calculadoradocidadao/site.py; python -m flask run
 
 tests:
-	python -m test.test_index
+	coverage run -m unittest discover
+	coverage xml
+	coverage report -m

@@ -1,2 +1,4 @@
 *.pyc
 .python-version
+.coverage
+coverage.xml
