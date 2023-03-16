@@ -12,7 +12,7 @@ gunicorn = "19.7.1"
 Jinja2 = "3.0.3"
 lxml = "4.9.1"
 requests = "2.20.0"
-Werkzeug = "2.0.3"
+Werkzeug = "2.2.3"
 
 [tool.poetry.dev-dependencies]
 black = "^22.1.0"
