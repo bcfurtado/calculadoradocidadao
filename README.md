@@ -1,7 +1,5 @@
 # Calculadora do Cidadão
 
-[![Build Status](https://travis-ci.org/bcfurtado/calculadoradocidadao.svg?branch=master)](https://travis-ci.org/bcfurtado/calculadoradocidadao)
-
 ## what's it?
 It's restful wrapper for `Calculadora do Cidadão` [website](https://www3.bcb.gov.br/CALCIDADAO/jsp/index.jsp).
 
